@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+
 import { createStackNavigator } from "@react-navigation/stack";
 import Map from "./ingame/Map";
 import Select from "./ingame/Select";
@@ -13,7 +13,6 @@ const InGame = () => {
     <StackNav.Navigator screenOptions={{ headerShown: false }}>
       <StackNav.Screen name="Select" component={Select} />
       <StackNav.Screen name="Map" component={Map} />
-
       <StackNav.Screen name="Battle" component={Battle} />
       <StackNav.Screen name="Shop" component={Shop} />
       <StackNav.Screen name="Heal" component={Heal} />
